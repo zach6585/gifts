@@ -1,0 +1,93 @@
+/* Below is all of the stuff that is used in the App.jsx file */
+
+.App {
+  background-image: url(../src/assets/stars.gif);
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  overflow: hidden;
+
+}
+
+#bzs {
+  //Stands for Buy Zach Stuff. This is the div containing the image that I made that is the first button
+  margin-top: 9vw;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+
+  #buyzach {
+    //This is the Buy Zach part
+    display: block;
+    width: 50vw;
+    margin-top: -8vw;
+    position: absolute;
+    margin-left: 25vw;
+    margin-right: auto;
+    z-index: 3;
+  }
+}
+
+#bzs:hover {
+  transform: translateX(-5vw) scale(1.1);
+
+}
+
+#bzs:active {
+  transform: translateY(4px);
+}
+
+
+.click-here-plus-arrow {
+  .clickhere {
+    //This is the image that says click here
+    display: block;
+    position: absolute;
+    width: 30vw;
+    margin-top: -20vw;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 30vw;
+    margin-top: 5vw;
+  }
+}
+
+#chpa1 {
+
+  .arrow {
+    margin-left: 10vw;
+    transform: rotate(180deg);
+
+  }
+}
+
+#chpa2 {
+
+  margin-left: 65vw;
+
+  .arrow {
+    margin-left: -3vw;
+  }
+}
+
+#show-if-in-portrait-on-mobile {
+  img {
+    color: red;
+    width: 70vw;
+    position: absolute;
+    margin-top: -150vw;
+    left: 15%;
+  }
+
+  display: none;
+}
+
+@media screen and (orientation: portrait) {
+  #show-if-in-portrait-on-mobile {
+    display: block;
+  }
+}
