@@ -2,4 +2,4 @@
 /home                /
 /shop    /shop
 /item/*             /item/:itemId
-/*  /index.html  200
+/*  /  200
