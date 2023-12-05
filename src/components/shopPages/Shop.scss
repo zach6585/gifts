@@ -25,29 +25,6 @@ body {
     overflow-x: hidden;
 }
 
-@media only screen and (max-width: 430px) {
-
-    //This is to ensure it works on iphones
-    #sort-div {
-        //This is to ensure the select element works on iphones
-        float: right;
-        margin-right: 3vw;
-        margin-top: 3vw;
-        padding-top: 10vw;
-    }
-}
-
-@media only screen and (min-width: 431px) {
-
-    //This is to ensure the select element works on things that aren't iphones
-    #sort-div {
-        //This is the div that contains the select element to order the items
-        float: right;
-        margin-top: -4vw;
-        margin-right: 3vw;
-    }
-}
-
 
 .shop-page-item-image {
     //This class is used with the images that will show each image on the main ShopPage
@@ -78,10 +55,43 @@ body {
 
 }
 
+@media only screen and (max-width: 430px) {
+
+    //This is to ensure it works on iphones
+    #sort-div {
+        //This is to ensure the select element works on iphones
+        float: right;
+        margin-right: 3vw;
+        margin-top: 3vw;
+        padding-top: 10vw;
+    }
+
+    //This goes in the ItemPage.jsx file, but I thought I'd put it here so I don't have to redo the @media thing
+    #item-page-div {
+        margin-top: -110vw;
+    }
+}
+
+@media only screen and (min-width: 431px) {
+
+    //This is to ensure the select element works on things that aren't iphones
+    #sort-div {
+        //This is the div that contains the select element to order the items
+        float: right;
+        margin-top: -4vw;
+        margin-right: 3vw;
+    }
+
+    #item-page-div {
+        margin-top: -10vw;
+    }
+
+    //This goes in the ItemPage.jsx file, but I thought I'd put it here so I don't have to redo the @media thing
+}
+
+
 //Below here is the CSS code that belongs to the ItemPage.jsx Component
 #item-page-div {
-
-    margin-top: -10vw;
     // height: 100vh;
 
     img {
