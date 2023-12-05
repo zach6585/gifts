@@ -1,4 +1,9 @@
 //This CSS below is for the ShopPage.jsx component
+html {
+    background-image: url(../src/assets/stars.gif);
+    background-repeat: repeat;
+    background-position: center;
+}
 
 header {
     //The header contains only a p tag. Not really sure if it's needed but whatevs. This is used both on ShopPage.jsx and ItemPage.jsx
@@ -18,12 +23,6 @@ header {
 body {
     //This prevents the horizontal scroll bar from appearing
     overflow-x: hidden;
-    background-image: url(../../assets/stars.gif);
-    background-repeat: repeat;
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    overflow: hidden;
 }
 
 @media only screen and (max-width: 430px) {
