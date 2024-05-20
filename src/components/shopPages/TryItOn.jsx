@@ -14,7 +14,9 @@ const TryItOn = () => {
         "elk": {
             1: <img src={All.elkay} alt="Elkay water filter" id="elkay" className="item-image" key="1" />, 2: <img src={All.bottle} alt="Water bottle" id="bottle" className="item-image" key="2" />
         },
-        "com": {}
+        "com": {
+            1: <img src={All.pc} alt="Custom Computer" id="computer" className="item-image" key="1" />
+        }
     } //this object is where the images are saved so you can pick them based on the ending three characters of the pathname
     if (location.pathname.slice(-3) === "mon") {
         return (
@@ -22,7 +24,6 @@ const TryItOn = () => {
                 <div className="before-after-card">
                     <img src={All.zach_base} alt="Zach base" className="zach-photo" />
                     <img src={All.moneybag} alt="Money Bag" id="money-bag" className='item-image' />
-                    <img src={All.money} alt="Money" id="money" className='item-image' />
                 </div>
             </>
         );

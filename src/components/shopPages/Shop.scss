@@ -189,7 +189,7 @@ body {
 
 #try-it-on {
     //This is the positioning for the TryItOn component
-
+    position: absolute;
     margin-left: 15vw;
 
     @media only screen and (max-width: 430px) {
@@ -340,9 +340,14 @@ select:after {
     margin-top: 18vw;
 }
 
-#money {
-    width: 10vw;
+#computer {
+    //This is the image of the hydroflask
     position: absolute;
+    width: 45vw;
+    margin-left: 12vw;
+    margin-top: 0vw;
+    z-index: 2;
+
 }
 
 .back-arrow {

@@ -18,6 +18,7 @@ import elkay from "../../assets/item_images/elkay_edited.png";
 import bottle from "../../assets/item_images/sksksksksk.png";
 import moneybag from "../../assets/item_images/money.png";
 import money from "../../assets/item_images/muney.png";
+import pc from "../../assets/item_images/pc.png";
 
 export {
     zach_base,
@@ -39,6 +40,7 @@ export {
     elkay,
     bottle,
     moneybag,
-    money
+    money,
+    pc
 
 }
