@@ -1,19 +1,10 @@
 //This file is for exporting the descriptions of the individual items
 
-const airpods = `Zach wants the Airpods Pros 2 because one of his airpods fell out of his ear while biking and got ran over by a car. According to
- Reddit, these are the best in-ear, wireless audio experience for Apple devices. I'd be fine with something else, but these are pretty neat.`
 
 const matfer = `Zach wants a carbon steel pan because non-stick is a little too fussy when it comes to cleaning, stainless steel isn't non-stick and 
 can be a pain to clean at times, and cast iron is too heavy to saute. Carbon steel seems to be the happy medium between them all. Any carbon steel
 pan is good, but America's Test Kitchen said this one was their favorite and, since I know nothing about carbon steel pan quality, I am 
 tempted to just trust them. Plus this is on the cheaper end for carbon steel pans. These come in various sizes.`
-
-const razor = `Zach has a shavette which is like a straight razor, but it has a little insert that you put a disposable razor blade into. Zach is annoyed
-by the fact that he has to keep buying the inserts when a straight razor would basically be a permanent version of that. He tried a safety razor, but it
-was bad at cutting the hair on his neck, which caused irritation. Therefore, this is the ideal shaving item for him.`
-
-const strop = `Zach would only need this if you got the Dovo Special Straight Razor or some other straight razor, as its purpose is to hone the razor of a 
-straight razor.`
 
 const pillow = `Zach has two silk pillow cases, but learned that satin pillow cases are not only cheaper, but just as affective at benefitting those with acne
 as well as those with curly hair, two things Zach has. This is a nice cheap option if you're looking to get him something but don't want to break the bank.`
@@ -46,12 +37,13 @@ Other plant options are also acceptable, this was just one that stood out.`
 const elkay = `One of the most important parts of staying healthy is by hydrating, and the best way to hydrate is by drinking water. By purchasing Zach an ElkaY LZS8WSLK EZH2O Drinking Fountain Station, you can ensure he'll always have easy access to 
 water and in such a good looking fashion. It's definitely a little pricey, but I'd say it's worth it if you love him, which you most definitely do I assume...`
 
+const money = `You can't go wrong with money. I can always use it to just get whatever I want. I recommend this for people who haven't found something they like on the list. 
+My venmo is @zichyboy. Cash is cool too`
+
+const pc = "I love art, but rendering art on a laptop takes days. Give me stuff to bring that down to seconds! You can contribute whatever you want from the list since it's a piecemeal thing. Or don't, that's your prerogative"
 
 export {
-    airpods,
     matfer,
-    razor,
-    strop,
     pillow,
     nasacort,
     furbo,
@@ -60,5 +52,7 @@ export {
     masa,
     schoolOfRock,
     plants,
-    elkay
+    elkay,
+    money,
+    pc
 }

@@ -37,6 +37,35 @@ body {
     margin-top: 20vw;
     margin-bottom: -10vw;
 
+    @-moz-keyframes spin {
+        from {
+            -moz-transform: rotate(0deg);
+        }
+
+        to {
+            -moz-transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
 
     p {
         font-size: 2vw;
@@ -47,9 +76,46 @@ body {
         margin-left: 3vw;
     }
 
-    button {
-        //TODO Add CSS code for button
+    @media screen and (max-width: 430px) {
+
+        //button looks different per screen res so I'm making two. This one is for iphones
+        button {
+            width: 34vw;
+            height: 15vw;
+        }
     }
+
+    @media screen and (min-width: 430px) {
+
+        //button looks different per screen res so I'm making two. This one is for computers
+        button {
+            width: 15vw;
+            height: 10vw;
+        }
+
+        button:hover {
+            animation-duration: 1ms;
+            animation-iteration-count: infinite;
+            animation-name: spin;
+            animation-timing-function: linear;
+            transition: rotate(3600deg);
+            -webkit-animation-name: spin;
+            -webkit-animation-duration: 1ms;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-name: spin;
+            -moz-animation-duration: 1ms;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: linear;
+            -ms-animation-name: spin;
+            -ms-animation-duration: 1ms;
+            -ms-animation-iteration-count: infinite;
+            -ms-animation-timing-function: linear;
+            -o-transition: rotate(3600deg);
+        }
+    }
+
+
 
     //Maybe should change it so user can click on whole table element and the button is just an automatic add to cart feature
 
@@ -90,6 +156,8 @@ body {
 }
 
 
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
 //Below here is the CSS code that belongs to the ItemPage.jsx Component
 #item-page-div {
     // height: 100vh;
@@ -104,14 +172,74 @@ body {
     }
 
     p {
-        margin: 20vw;
+        margin: 20vw 20vw 0 20vw;
         color: maroon;
         text-align: center;
         font-size: 2vw;
 
         // float: right;
     }
+
+    button {
+        display: block;
+        width: 20vw;
+        margin: 2vw 0 10vw 40vw;
+    }
 }
+
+#try-it-on {
+    //This is the positioning for the TryItOn component
+
+    margin-left: 15vw;
+
+    @media only screen and (max-width: 430px) {
+        //This is to ensure it works on iphones
+        margin-top: -90vw;
+    }
+
+    @media only screen and (min-width: 430px) {
+        //This is to ensure it works on computers
+        margin-top: -20vw;
+    }
+
+}
+
+#item-page-arrow {
+    position: absolute;
+    margin-left: 3vw;
+}
+
+@keyframes sink {
+    100% {
+
+        transform: translateY(100vw);
+    }
+
+    0% {
+        transform: translateY(0vw);
+    }
+
+}
+
+select {
+    animation-name: sink;
+    animation-duration: 50s;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;
+}
+
+
+select:hover,
+select:focus,
+select:after {
+    animation: sink 50s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+
 
 
 //Below here is the CSS code that belongs to the TryItOn Component
@@ -127,63 +255,16 @@ body {
 .before-after-card {
     //This is called before and after card because it contains elements that will shift between being hidden in the before and shown in the after. 
     //Examples are the pan, the razor, etc. The cards are divs and they all contain the same picture (titled before) of me.
-    margin-top: -20vw;
-    margin-left: 10vw;
+
+
+
+    position: relative;
 
     .item-image {
         z-index: 2;
     }
 }
 
-#big-pan {
-    //This is the image of the pan that is used for the big version of the pan
-    position: absolute;
-    width: 11vw;
-    margin-left: 32.8vw;
-    margin-top: 17.3vw;
-}
-
-#little-pan {
-    //This is the image of the pan that is used for the little version of the pan
-    position: absolute;
-    width: 7vw;
-    margin-left: 34.8vw;
-    margin-top: 19vw;
-}
-
-
-#airpods {
-    //This is the image of the airpod
-    position: absolute;
-    width: 1.3vw;
-    margin-left: 27vw;
-    margin-top: 6.5vw;
-}
-
-#strop {
-    //This is the image of the strop
-    position: absolute;
-    transform: rotate(28deg);
-    width: 11vw;
-    margin-left: 27vw;
-    margin-top: 17vw;
-}
-
-#razor {
-    //This is the image of the razor blade 
-    position: absolute;
-    width: 4.5vw;
-    margin-left: 33vw;
-    margin-top: 18.5vw;
-}
-
-#pillow {
-    //This is the image of the pillow case
-    position: absolute;
-    width: 14.5vw;
-    margin-left: 22.4vw;
-    margin-top: 0vw;
-}
 
 #nasacort {
     //This is the image of nasacort
@@ -210,13 +291,6 @@ body {
     margin-top: 15vw;
 }
 
-#purifier {
-    //This is the image of the Conway air purifier
-    position: absolute;
-    width: 8vw;
-    margin-left: 35.6vw;
-    margin-top: 15vw;
-}
 
 #shoes {
     //This is the image of legs and New Balance Shoes
@@ -224,46 +298,6 @@ body {
     width: 11vw;
     margin-left: 22.3vw;
     margin-top: 27vw;
-}
-
-#masa {
-    //This is the image of the heirloom masa set
-    position: absolute;
-    width: 11vw;
-    margin-left: 29.3vw;
-    margin-top: 17vw;
-}
-
-#bass {
-    //This is the image of the Ibanez bass
-    position: absolute;
-    width: 25.5vw;
-    margin-left: 19vw;
-    margin-top: 14vw;
-}
-
-#guitar {
-    //This is the image of Zach holding a flying V guitar
-    position: absolute;
-    width: 25.5vw;
-    margin-left: 35vw;
-    margin-top: 3.75vw;
-}
-
-#drums {
-    //This is the image of Zach and a drum kit
-    position: absolute;
-    width: 22vw;
-    margin-left: 11vw;
-    margin-top: .9vw;
-}
-
-#singer {
-    //This is the image of Zach and a drum kit
-    position: absolute;
-    width: 18vw;
-    margin-left: 30vw;
-    margin-top: -1vw;
 }
 
 #plants {
@@ -280,6 +314,40 @@ body {
     width: 10vw;
     margin-left: 30.8vw;
     margin-top: 18.5vw;
+}
+
+#elkay {
+    //This is the image of the elkay water filter
+    position: absolute;
+    width: 10vw;
+    margin-left: 31.7vw;
+    margin-top: 13.65vw;
+}
+
+#bottle {
+    //This is the image of the hydroflask
+    position: absolute;
+    width: 2vw;
+    margin-left: 36.8vw;
+    margin-top: 17.6vw;
+    transform: rotate(-90deg);
+}
+
+#money-bag {
+    position: absolute;
+    width: 10vw;
+    margin-left: 28vw;
+    margin-top: 18vw;
+}
+
+#money {
+    width: 10vw;
+    position: absolute;
+}
+
+.back-arrow {
+    width: 10vw;
+    padding-bottom: 4vw;
 }
 
 .hidden {

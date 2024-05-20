@@ -1,6 +1,4 @@
 TODO
 
-- Add try on feature
-- Add cart option
-- Make backend and add sold out feature (or don't. It's not necessary)
-- Make design better
+- Add cart option (?)
+- fix the money page (maybe include the slider and lots of money)

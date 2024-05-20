@@ -1,9 +1,6 @@
 import zach_base from "../../assets/item_images/before.jpg";
 import big_pan from "../../assets/item_images/bigpan.png";
 import little_pan from "../../assets/item_images/littlepan.png";
-import airpods from "../../assets/item_images/airpod.png";
-import razor from "../../assets/item_images/razor_edited.png";
-import strop from "../../assets/item_images/strop.png";
 import pillow from "../../assets/item_images/pillow_edited.png";
 import nasacort from "../../assets/item_images/nasacort_edited.png";
 import furbo from "../../assets/item_images/furbo.png";
@@ -17,25 +14,31 @@ import drums from "../../assets/item_images/drums.png";
 import singer from "../../assets/item_images/singer.png";
 import plants from "../../assets/item_images/plants.png";
 import watering_can from "../../assets/item_images/watering_can.png";
+import elkay from "../../assets/item_images/elkay_edited.png";
+import bottle from "../../assets/item_images/sksksksksk.png";
+import moneybag from "../../assets/item_images/money.png";
+import money from "../../assets/item_images/muney.png";
 
+export {
+    zach_base,
+    big_pan,
+    little_pan,
+    pillow,
+    nasacort,
+    furbo,
+    calvin,
+    air_purifier,
+    shoes,
+    masa,
+    bass,
+    guitar,
+    drums,
+    singer,
+    plants,
+    watering_can,
+    elkay,
+    bottle,
+    moneybag,
+    money
 
-export 
-{zach_base,
-big_pan,
-little_pan,
-airpods,
-razor,
-strop,
-pillow,
-nasacort,
-furbo,
-calvin,
-air_purifier,
-shoes,
-masa,
-bass,
-guitar,
-drums,
-singer,
-plants,
-watering_can }
+}
